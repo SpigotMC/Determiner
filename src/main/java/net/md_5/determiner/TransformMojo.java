@@ -126,7 +126,7 @@ public class TransformMojo extends AbstractMojo
 
         public ClassTransformer(ClassVisitor cv)
         {
-            super( Opcodes.ASM6, cv );
+            super( Opcodes.ASM9, cv );
         }
 
         @Override
@@ -178,7 +178,7 @@ public class TransformMojo extends AbstractMojo
 
             public MethodTransformer(MethodVisitor mv)
             {
-                super( Opcodes.ASM6, mv );
+                super( Opcodes.ASM9, mv );
             }
 
             @Override
